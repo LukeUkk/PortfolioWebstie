@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     background: "#222",
     margin: 0,
+    flexDirection: "row-reverse",
   },
   arrow: {
     color: "tomato",
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const menuItems = [
-  { listIcon: <Home />, listText: "Home", listPath: "/" },
+  { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebstie/" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
@@ -63,7 +64,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Mahmudul Alam" />
+      <Avatar className={classes.avatar} src={avatar} alt="Luke Hardcastle" />
       <Divider />
       <List>
         {menuItems.map((item, i) => (
