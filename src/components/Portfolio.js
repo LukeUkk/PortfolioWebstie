@@ -17,14 +17,25 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import CloseIcon from '@material-ui/icons/Close';
-
+import Pdf from '../images/portfolio/DIVA/DivaTelecomHuddersfield.pdf';
 
 
 
 import projectHeaderImg1 from "../images/ECS_index.png";
 import projectHeaderImg2 from "../images/DIVA_homepagecake.jpg";
 import projectHeaderImg3 from "../images/GOLHome.JPG";
+
 import projectHeaderImg4 from "../images/ESP_Dash.PNG";
+import ESPImg4_1 from "../images/portfolio/ESP/vehicles.png";
+import ESPImg4_2 from "../images/portfolio/ESP/TAMS.PNG";
+import ESPImg4_3 from "../images/portfolio/ESP/Action4Care_dash.png";
+import ESPImg4_4 from "../images/portfolio/ESP/TeamPlan.PNG";
+
+
+
+
+
+
 import projectHeaderImg6 from "../images/react.png";
 import Particles from "./Particles";
 
@@ -54,6 +65,8 @@ var projects = [
     description: `The above is the home page of the management system I created for DIVA, the page shows important things to be actioned.
     The home page includes a change log where employees can see what changes have been made and if it affects anything they use so they are aware. This site was made using Laravel.`,
     image: projectHeaderImg2,
+    live_demo_link: "diva",
+
     // ideal way is to have additonalImages in here 
   },
   {
@@ -90,6 +103,11 @@ const GOLAdditonalImages = [
 
 const ESPAdditonalImages = [
   projectHeaderImg4,
+  ESPImg4_1,
+  ESPImg4_2,
+  ESPImg4_3,
+  ESPImg4_4,
+
 ];
 
 console.log(EcsAdditonalImages)
@@ -181,6 +199,7 @@ class ESPCarousel extends Component {
       );
   }
 };
+
 // TODO make 4x DemoCaraousel class or a for loop like below
 // in each have photo of websites
 // Call 4x DemoCarousel Below 
@@ -222,16 +241,24 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                { 
-                  (
-                    (project.live_demo_link) 
+                {(
+                    (project.live_demo_link && project.live_demo_link != 'diva') 
                       ? 
                     <Button size="small" color="primary" target="_blank" href={project.live_demo_link} >
                       Live Demo
-                    </Button> : ''
-                  ) 
-                }
+                    </Button> 
+                    : 
+                    ''
 
+                )}
+                {(
+                  (project.live_demo_link == 'diva') ?
+                    <Button size="small" color="primary" target="_blank" href={Pdf} >
+                      Live Demo
+                    </Button>
+                    : 
+                    ''
+                )}
               </CardActions>
             </Card>
           </Grid>

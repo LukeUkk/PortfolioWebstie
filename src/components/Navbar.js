@@ -53,9 +53,9 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebsite" },
-  { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
-  { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-  // { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+  { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/Resume" },
+  { listIcon: <Apps />, listText: "Portfolio", listPath: "/Portfolio" },
+  // { listIcon: <ContactMail />, listText: "Contact", listPath: "/Contact" },
 ];
 
 const Navbar = () => {
