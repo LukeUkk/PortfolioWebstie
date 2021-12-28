@@ -22,7 +22,22 @@ import Pdf from '../images/portfolio/DIVA/DivaTelecomHuddersfield.pdf';
 
 
 import projectHeaderImg1 from "../images/ECS_index.png";
+import ECSImg1_1 from "../images/portfolio/ECS/websitehomemenu.png";
+import ECSImg1_2 from "../images/portfolio/ECS/productrange.png";
+import ECSImg1_3 from "../images/portfolio/ECS/spific-product-range.png";
+import ECSImg1_4 from "../images/portfolio/ECS/mobilenav.png";
+import ECSImg1_5 from "../images/portfolio/ECS/404-1.png";
+import ECSImg1_6 from "../images/portfolio/ECS/dog.gif";
+
+
+
+
+
+
 import projectHeaderImg2 from "../images/DIVA_homepagecake.jpg";
+import DIVAImg2_1 from "../images/portfolio/DIVA/divaReport.jpg";
+import DIVAImg2_2 from "../images/portfolio/DIVA/diva-telecom-international.jpg";
+
 import projectHeaderImg3 from "../images/GOLHome.JPG";
 
 import projectHeaderImg4 from "../images/ESP_Dash.PNG";
@@ -91,10 +106,19 @@ var projects = [
 
 const EcsAdditonalImages = [
     projectHeaderImg1,
+    ECSImg1_1,
+    ECSImg1_2,
+    ECSImg1_3,
+    ECSImg1_4,
+    ECSImg1_5,
+    ECSImg1_6
 ];
 
 const DivaAdditonalImages = [
   projectHeaderImg2,
+  DIVAImg2_1,
+  DIVAImg2_2,
+
 ];
 
 const GOLAdditonalImages = [
