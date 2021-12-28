@@ -2,10 +2,16 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Particles from "./Particles";
+import Typed from "react-typed";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
+    width: "82%",
+    margin: "2% 10% 2% 10%",
+    borderRadius: "4px",
+    border: "1px solid #223333",
   },
   timeLine: {
     position: "relative",
@@ -113,15 +119,21 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
+      <Particles />
+
       <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
+          Working Experience
+        <Typography variant="body1" align="center" className={classes.body1}>
+            Breif Overview
+        </Typography>
       </Typography>
+
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2013
+          2018
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -129,27 +141,24 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            web design
+            <Typed strings={["FullStack Web Developer"]} typeSpeed={50} />
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Effective Consumable Solutions
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+              I worked with the MD on the design of the “GreenAgenda” web page, the website was made using wordpress.org. Also while I was employed here, I redesigned their customer facing website to make it moden & responsive. This was an important task as their website was the main source of income.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -157,27 +166,27 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            html & css
+             <Typed strings={["FullStack Web Developer"]} typeSpeed={50} />
+
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            DIVA Telecom
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+             I was employed by Diva to finish creating their Laravel based internal management system, which each employee used daily to record and edit everything about their customers and more, 
+             The project started at the beginning of 2017 and it wasn't kept upto date so I gained alot of experience when it came to debugging other peoples code. 
+             While at the company I was tasked with planing and making a promotional landing page, converting the design teams mockups into a usable web application, this ended up generating sales.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2015
+          2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -185,35 +194,34 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+            <Typed strings={["Software Developer"]} typeSpeed={50} />
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            ESP Projects
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Working at ESP Projects I was mainly tasked with working on their Laravel internal management system, Called the "Intranet" after a year of development the MD saw the value of reselling the Intranet to there customers, so the rest of my time here was spent working on custom Laravel applications for clients using various API's but also working on the reselling of the Intranet as a SAAS product.
           </Typography>
         </Box>
-        <Typography
+        
+        
+         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
+        > 
+          ...
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+        {/*<Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            Django & React
+            Company Role
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             company name where worked
@@ -223,12 +231,9 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            ...
           </Typography>
-        </Box>
+        </Box>*/}
       </Box>
     </Box>
   );

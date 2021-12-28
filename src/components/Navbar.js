@@ -12,7 +12,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import ArrowBack from "@material-ui/icons/ArrowBack";
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
@@ -24,19 +24,20 @@ import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: "#222",
+    background: "#1c1919",
     margin: 0,
     flexDirection: "row-reverse",
   },
-  arrow: {
+  menuIcon: {
     color: "tomato",
+    fontSize: "xx-large",
   },
   title: {
     color: "tan",
   },
   menuSliderContainer: {
     width: 250,
-    background: "#511",
+    background: "#161313",
     height: "100%",
   },
   avatar: {
@@ -51,10 +52,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const menuItems = [
-  { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebstie/" },
+  { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebstie" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/resume" },
   { listIcon: <Apps />, listText: "Portfolio", listPath: "/portfolio" },
-  { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
+  // { listIcon: <ContactMail />, listText: "Contact", listPath: "/contact" },
 ];
 
 const Navbar = () => {
@@ -92,7 +93,7 @@ const Navbar = () => {
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />
+              <MenuRoundedIcon className={classes.menuIcon} />
             </IconButton>
             <Typography variant="h5" className={classes.title}>
               Portfolio

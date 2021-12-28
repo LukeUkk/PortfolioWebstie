@@ -96,6 +96,7 @@ const Contact = () => {
             fullWidth={true}
             endIcon={<Send />}
             className={classes.button}
+            href="mailto:lukehardcastle1997@gmail.com"
           >
             Contact Me
           </Button>

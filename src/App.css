@@ -1,7 +1,46 @@
 body {
-  background: url(coffee-apple.jpg) no-repeat center center fixed;
+  background: url(images/Background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.carousel-root {
+  display: none;
+  position: fixed !important; /* Stay in place */
+  z-index: 1 !important; /* Sit on top */
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important; /* Full width */
+  height: 100%;
+  overflow: auto !important; /* Enable scroll if needed */
+  background-color: rgb(0,0,0) !important; /* Fallback color */
+  background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+}
+
+.carousel-slider {
+  background-color: #fefefe !important;
+  margin: 1% auto !important; /* 15% from the top and centered */
+  border: 1px solid #888 !important;
+  width: 80% !important; /* Could be more or less, depending on screen size */
+}
+
+.carouselCloseButton {
+  display: none;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1;
+  left: 10%;
+  top: 12px;
+}
+
+.carouselCloseButton:hover,
+.carouselCloseButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
