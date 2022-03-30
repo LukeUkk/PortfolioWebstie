@@ -8,6 +8,24 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 import "./App.css";
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+});
 
 function App() {
   return (
@@ -15,10 +33,12 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Switch>
+      <ThemeProvider theme={theme}>
         <Route exact path="/PortfolioWebsite" component={Home} />
         <Route exact path="/Resume" component={Resume} />
         <Route exact path="/Projects" component={Projects} />
         <Route exact path="/Contact" component={Contact} />
+        </ThemeProvider>
       </Switch>
     </React.Fragment>
   );

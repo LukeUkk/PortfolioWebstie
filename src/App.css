@@ -41,8 +41,10 @@ body {
   font-weight: bold;
   position: fixed;
   z-index: 1;
-  left: 10%;
-  top: 12px;
+  /* left: 10%;
+  top: 12px; */
+  left: 89%;
+  top: 8px;
 }
 
 .carouselCloseButton:hover,
@@ -53,6 +55,12 @@ body {
 }
 
 
-.makeStyles-timeLine-9 {
-  padding-bottom: 6.9% !important;
+
+
+
+
+/* Nav Bar Center items */
+.MuiListItem-gutters {
+  padding-left: 48% !important; 
+  padding-right: 48% !important;
 }

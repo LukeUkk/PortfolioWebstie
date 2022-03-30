@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
   },
   title: {
-    color: "tomato",
+    color: "#ebece9",
   },
   subtitle: {
     color: "tan",
@@ -26,9 +26,11 @@ const useStyles = makeStyles((theme) => ({
     top: "50%",
     left: "50%",
     transform: "translate(-50%,-50%)",
-    width: "100vw",
     textAlign: "center",
     zIndex: 1,
+    borderRadius: "10%",
+    backgroundColor: "#22272d45",
+    minWidth: "15vw",
   },
 }));
 

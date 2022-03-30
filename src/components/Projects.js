@@ -56,8 +56,11 @@ import Particles from "./Particles";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
-    height: "100%",
+    background: "#131426d6",
+    margin: "0% 10% 0% 10%",
+    borderRadius: "4px",
+    border: "1px solid #131426d6",
+    minHeight: "95.62vh",
   },
   cardContainer: {
     maxWidth: 345,

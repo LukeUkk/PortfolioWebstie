@@ -29,14 +29,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row-reverse",
   },
   menuIcon: {
-    color: "tomato",
+    color: "#e5e7e4eb",
     fontSize: "xx-large",
   },
   title: {
     color: "tan",
   },
   menuSliderContainer: {
-    width: 250,
     background: "#161313",
     height: "100%",
   },
@@ -48,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     color: "tan",
+    textAlign: "center"
   },
   marginAuto: {
     margin: "auto",
@@ -68,7 +68,7 @@ const Navbar = () => {
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
-      <Avatar className={classes.avatar} src={avatar} alt="Luke Hardcastle" />
+
       <Divider />
       <List>
         {menuItems.map((item, i) => (
@@ -101,7 +101,7 @@ const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+      <Drawer open={open} anchor="top" onClose={() => setOpen(false)}>
         {sideList()}
         <Footer />
       </Drawer>

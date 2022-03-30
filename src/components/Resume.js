@@ -4,7 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Particles from "./Particles";
 import Typed from "react-typed";
-import "../App.css";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0% 10% 0% 10%",
     borderRadius: "4px",
     border: "1px solid #131426d6",
+    minHeight: "95.62vh",
   },
   timeLine: {
     position: "relative",
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
       border: "1px solid tan",
       right: "40px",
       top: 0,
+
     },
     "&:after": {
       content: "''",
@@ -36,14 +37,16 @@ const useStyles = makeStyles((theme) => ({
       "&:before": {
         left: "calc(50% - 1px)",
         right: "auto",
+        minHeight: "83vh",
       },
     },
   },
   timeLineItem: {
     padding: "1rem",
     borderBottom: "2px solid tan",
+    borderRadius: "8px",
     position: "relative",
-    margin: "1rem 3rem 1rem 1rem",
+    margin: "5rem 3rem 5rem 1rem",
     clear: "both",
     "&:after": {
       content: "''",
@@ -131,7 +134,7 @@ const Resume = () => {
     <Box component="header" className={classes.mainContainer}>
       <Particles />
 
-      <Typography variant="h4" align="center" className={classes.heading }>
+      <Typography variant="h4" align="center" className={classes.heading } BlinkMacSystemFont>
           Working Experience
         <Typography variant="body1" align="center" className={classes.body1}>
             Breif Overview
@@ -161,7 +164,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-              I worked with the MD on the design of the “GreenAgenda” web page, the website was made using wordpress.org. Also while I was employed here, I redesigned their customer facing website to make it moden & responsive. This was an important task as their website was the main source of income.
+              I worked with the MD on the design of the <i>GreenAgenda</i> web page, the website was made using wordpress.org. Also while I was employed here, I redesigned their customer facing website to make it modern & responsive. This was an important task as their website was the main source of income.
           </Typography>
         </Box>
         <Typography
@@ -187,8 +190,8 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-             I was employed by Diva to finish creating their Laravel based internal management system, which each employee used daily to record and edit everything about their customers and more, 
-             The project started at the beginning of 2017 and it wasn't kept upto date so I gained alot of experience when it came to debugging other peoples code. 
+             I was employed by Diva to finish creating their Laravel based internal management system, which each employee used daily. 
+             The project started at the beginning of 2017 and it wasn't kept uptodate so I gained alot of experience when it came to debugging other peoples code after upgrading. 
              While at the company I was tasked with planing and making a promotional landing page, converting the design teams mockups into a usable web application, this ended up generating sales.
           </Typography>
         </Box>
@@ -214,7 +217,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Working at ESP Projects I was mainly tasked with working on their Laravel internal management system, Called the "Intranet" after a year of development the MD saw the value of reselling the Intranet to there customers, so the rest of my time here was spent working on custom Laravel applications for clients using various API's but also working on the reselling of the Intranet as a SAAS product.
+            I was mainly tasked with working on their Laravel/Vue.js based intranet system, after developing the framework the full potential of the system was realised and moved towards being a SAAS product that could be resold but along side this project I worked on bespoke Laravel applications for clients using various API's.
           </Typography>
         </Box>
         
@@ -223,8 +226,10 @@ const Resume = () => {
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         > 
-          ...
+          2023
         </Typography>
+
+        
         {/*<Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
