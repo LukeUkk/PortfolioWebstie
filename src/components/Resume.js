@@ -4,14 +4,15 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Particles from "./Particles";
 import Typed from "react-typed";
+import "../App.css";
+
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
-    width: "82%",
-    margin: "2% 10% 2% 10%",
+    background: "#131426d6",
+    margin: "0% 10% 0% 10%",
     borderRadius: "4px",
-    border: "1px solid #223333",
+    border: "1px solid #131426d6",
   },
   timeLine: {
     position: "relative",
@@ -71,6 +72,12 @@ const useStyles = makeStyles((theme) => ({
         left: "-0.625rem",
         borderColor: "transparent transparent tomato tomato",
       },
+      "&:nth-of-type(4n):before": {
+        right: "auto",
+        left: "-0.625rem",
+        borderColor: "transparent transparent tomato tomato",
+        padding: "0% 10% 0% 10%",
+      },
     },
   },
   timeLineYear: {
@@ -113,6 +120,9 @@ const useStyles = makeStyles((theme) => ({
   subtitle1: {
     color: "tan",
   },
+  paddingBottom: {
+
+  },
 }));
 
 const Resume = () => {
@@ -121,7 +131,7 @@ const Resume = () => {
     <Box component="header" className={classes.mainContainer}>
       <Particles />
 
-      <Typography variant="h4" align="center" className={classes.heading}>
+      <Typography variant="h4" align="center" className={classes.heading }>
           Working Experience
         <Typography variant="body1" align="center" className={classes.body1}>
             Breif Overview

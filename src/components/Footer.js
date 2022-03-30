@@ -4,6 +4,7 @@ import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Facebook from "@material-ui/icons/LinkedIn";
 import Twitter from "@material-ui/icons/Twitter";
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -25,8 +26,7 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
+      <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
     </BottomNavigation>
   );
 };

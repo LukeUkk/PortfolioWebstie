@@ -95,10 +95,7 @@ var projects = [
   },
   {
     name: "ESP Projects",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `My role: what i worked on and how it helped the company`,
     image: projectHeaderImg4,
   },
 

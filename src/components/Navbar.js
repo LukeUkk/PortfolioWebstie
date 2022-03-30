@@ -18,13 +18,13 @@ import Home from "@material-ui/icons/Home";
 import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import avatar from "../avatar.png";
+import avatar from "../images/homepage/menew.png";
 
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: "#1c1919",
+    background: "#100d18",
     margin: 0,
     flexDirection: "row-reverse",
   },
@@ -49,12 +49,15 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "tan",
   },
+  marginAuto: {
+    margin: "auto",
+  },
 }));
 
 const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebsite" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/Resume" },
-  { listIcon: <Apps />, listText: "Portfolio", listPath: "/Portfolio" },
+  { listIcon: <Apps />, listText: "Projects", listPath: "/Projects" },
   // { listIcon: <ContactMail />, listText: "Contact", listPath: "/Contact" },
 ];
 
@@ -91,13 +94,10 @@ const Navbar = () => {
     <React.Fragment>
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar>
-            <IconButton onClick={() => setOpen(true)}>
+          <Toolbar variant="dense" className={classes.marginAuto} >
+            <IconButton onClick={() => setOpen(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
               <MenuRoundedIcon className={classes.menuIcon} />
             </IconButton>
-            <Typography variant="h5" className={classes.title}>
-              Portfolio
-            </Typography>
           </Toolbar>
         </AppBar>
       </Box>

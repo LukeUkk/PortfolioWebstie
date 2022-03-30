@@ -4,6 +4,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  scrollbar-base-color: rgb(19, 138, 114);
+  scrollbar-3dlight-color: #fff;
+  scrollbar-highlight-color: #1abc9c;
+  scrollbar-track-color: #fff;
+  scrollbar-arrow-color: #1abc9c;
+  scrollbar-shadow-color: #1abc9c;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .carousel-root {
@@ -43,4 +50,9 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.makeStyles-timeLine-9 {
+  padding-bottom: 6.9% !important;
 }
