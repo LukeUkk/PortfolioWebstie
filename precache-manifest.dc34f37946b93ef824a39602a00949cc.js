@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c62d0fa97158b3a3eac9d26ecabb95b2",
+    "revision": "c64ad397a6c7cc4efada3687d4e07dac",
     "url": "/PortfolioWebsite/index.html"
   },
   {
-    "revision": "2fe516bb012e6dcd9483",
+    "revision": "4dc5c4c5967cea4fbb27",
     "url": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css"
   },
   {
-    "revision": "78cb11329e088e4ab3c3",
-    "url": "/PortfolioWebsite/static/css/main.61d56426.chunk.css"
+    "revision": "c3ff7b02bdf34a2aeda5",
+    "url": "/PortfolioWebsite/static/css/main.5d6be1c3.chunk.css"
   },
   {
-    "revision": "2fe516bb012e6dcd9483",
-    "url": "/PortfolioWebsite/static/js/2.4221f933.chunk.js"
+    "revision": "4dc5c4c5967cea4fbb27",
+    "url": "/PortfolioWebsite/static/js/2.d023aa89.chunk.js"
   },
   {
     "revision": "7b625a45147bc7d0c8faa24b5de5dc79",
-    "url": "/PortfolioWebsite/static/js/2.4221f933.chunk.js.LICENSE.txt"
+    "url": "/PortfolioWebsite/static/js/2.d023aa89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78cb11329e088e4ab3c3",
-    "url": "/PortfolioWebsite/static/js/main.0f4bfb4e.chunk.js"
+    "revision": "c3ff7b02bdf34a2aeda5",
+    "url": "/PortfolioWebsite/static/js/main.a6cf3780.chunk.js"
   },
   {
     "revision": "2d19fd59d7941ebbf6eb",
@@ -60,12 +60,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioWebsite/static/media/GOLHome.dfe47ae7.JPG"
   },
   {
-    "revision": "6afa26c53a9e9ba7b1b826e35b8f9262",
-    "url": "/PortfolioWebsite/static/media/TAMS.6afa26c5.PNG"
+    "revision": "97ea62a585a0623a8305086fda7dee0e",
+    "url": "/PortfolioWebsite/static/media/PermBuilder.97ea62a5.PNG"
   },
   {
-    "revision": "2b105a22ff975ca12bb0e75d5e487ffa",
-    "url": "/PortfolioWebsite/static/media/TeamPlan.2b105a22.PNG"
+    "revision": "2405d1bb97924c759e3787fd82ca364d",
+    "url": "/PortfolioWebsite/static/media/ProdReturns.2405d1bb.PNG"
+  },
+  {
+    "revision": "32449bd28e37a14af4a2a7a117fbcf31",
+    "url": "/PortfolioWebsite/static/media/Returns.32449bd2.PNG"
+  },
+  {
+    "revision": "6d98d1031d33d6cd150432af0a6e81ea",
+    "url": "/PortfolioWebsite/static/media/TeamPlan.6d98d103.PNG"
+  },
+  {
+    "revision": "5e836e4758ceeb303cfa86320f87d716",
+    "url": "/PortfolioWebsite/static/media/TeamPlanGantt.5e836e47.PNG"
+  },
+  {
+    "revision": "88d032b98de1cc97f39b82e5b53de35a",
+    "url": "/PortfolioWebsite/static/media/Timesheet.88d032b9.PNG"
   },
   {
     "revision": "9a42d0c6b8c53dda86cc968f0c0e4b55",
@@ -80,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioWebsite/static/media/dog.814c1959.gif"
   },
   {
-    "revision": "cdd9f8d0dd72cea500378b6d0659aec5",
-    "url": "/PortfolioWebsite/static/media/menew.cdd9f8d0.png"
+    "revision": "7c8e5f50725885d51b72b45164274e41",
+    "url": "/PortfolioWebsite/static/media/menew.7c8e5f50.png"
   },
   {
     "revision": "851092805fb8dad84aba77a556582fe0",
