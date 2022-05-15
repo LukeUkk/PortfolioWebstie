@@ -192,7 +192,7 @@ const Resume = () => {
           >
              I was employed by Diva to finish creating their Laravel based internal management system, which each employee used daily. 
              The project started at the beginning of 2017 and it wasn't kept uptodate so I gained alot of experience when it came to debugging other peoples code after upgrading. 
-             While at the company I was tasked with planing and making a promotional landing page, converting the design teams mockups into a usable web application, this ended up generating sales.
+             Also while at the company I was tasked with planing and making a promotional landing page, converting the design teams mockups into a usable web application, this ended up generating sales.
           </Typography>
         </Box>
         <Typography

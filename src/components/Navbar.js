@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     color: "tan",
   },
   menuSliderContainer: {
-    background: "#161313",
+    background: "#100d18",
     height: "100%",
   },
   avatar: {
@@ -102,7 +102,7 @@ const Navbar = () => {
         </AppBar>
       </Box>
       <Drawer open={open} anchor="top" onClose={() => setOpen(false)}>
-        {sideList()}
+        {/* {sideList()} */}
         <Footer />
       </Drawer>
     </React.Fragment>

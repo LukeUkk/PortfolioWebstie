@@ -20,8 +20,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Pdf from '../images/portfolio/DIVA/DivaTelecomHuddersfield.pdf';
 
 
-
-import projectHeaderImg1 from "../images/ECS_index.png";
+import projectHeaderImg1 from "../images/portfolio/ECS/ECS_index.png";
 import ECSImg1_1 from "../images/portfolio/ECS/websitehomemenu.png";
 import ECSImg1_2 from "../images/portfolio/ECS/productrange.png";
 import ECSImg1_3 from "../images/portfolio/ECS/spific-product-range.png";
@@ -30,29 +29,35 @@ import ECSImg1_5 from "../images/portfolio/ECS/404-1.png";
 import ECSImg1_6 from "../images/portfolio/ECS/dog.gif";
 
 
-
-
-
-
-import projectHeaderImg2 from "../images/DIVA_homepagecake.jpg";
+import projectHeaderImg2 from "../images/portfolio/DIVA/DIVA_homepagecake.jpg";
 import DIVAImg2_1 from "../images/portfolio/DIVA/divaReport.jpg";
 import DIVAImg2_2 from "../images/portfolio/DIVA/diva-telecom-international.jpg";
 
-import projectHeaderImg3 from "../images/GOLHome.JPG";
 
-import projectHeaderImg4 from "../images/ESP_Dash.PNG";
+import projectHeaderImg3 from "../images/portfolio/GOL/GOLHome.JPG";
+
+
+
+import projectHeaderImg4 from "../images/portfolio/ESP/ESP_Dash.PNG";
 import ESPImg4_1 from "../images/portfolio/ESP/vehicles.png";
-import ESPImg4_2 from "../images/portfolio/ESP/TAMS.PNG";
+import ESPImg4_2 from "../images/portfolio/ESP/Timesheet.PNG";
 import ESPImg4_3 from "../images/portfolio/ESP/Action4Care_dash.png";
 import ESPImg4_4 from "../images/portfolio/ESP/TeamPlan.PNG";
-
-
-
-
+import ESPImg4_5 from "../images/portfolio/ESP/PermBuilder.PNG";
+import ESPImg4_6 from "../images/portfolio/ESP/TeamPlanGantt.PNG";
+import ESPImg4_7 from "../images/portfolio/ESP/Returns.PNG";
+import ESPImg4_8 from "../images/portfolio/ESP/ProdReturns.PNG";
 
 
 import projectHeaderImg6 from "../images/react.png";
 import Particles from "./Particles";
+import { green, red } from '@material-ui/core/colors';
+import { Icon } from '@material-ui/core';
+
+
+/* This code could be alot better but yeah react....*/ 
+
+
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -69,13 +74,18 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
-var projects = [
+const projects = [
   {
     name: "Effective Consumable Solutions",
-    description: `The Above is showing the landing page that I redesigned and developed for ECS. This was made using pure CSS3 & HTML5 with a reactive design, backend was Majento.`,
+    description: `The Above is showing the landing page that I redesigned and developed for ECS. This was made using pure css3-alt & HTML5 with a reactive design, backend was Majento.`,
     image: projectHeaderImg1,
     additonalImages: [
         projectHeaderImg6,
+    ],
+    icons: [
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-html5",
+      "fa-brands fa-magento"
     ]
   },
   {
@@ -84,8 +94,14 @@ var projects = [
     The home page includes a change log where employees can see what changes have been made and if it affects anything they use so they are aware. This site was made using Laravel.`,
     image: projectHeaderImg2,
     live_demo_link: "diva",
-
-    // ideal way is to have additonalImages in here 
+    icons: [
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-html5",
+      "fa-brands fa-laravel",
+      "fa-brands fa-bootstrap",
+      "fa-brands fa-github",
+    ]
+    // ideal way is to have additonalImages in here ******
   },
   {
     name: "Gaming Forum",
@@ -95,11 +111,28 @@ var projects = [
     iste alias sunt veritatis nisi dolores!`,
     image: projectHeaderImg3,
     live_demo_link: "https://gol-clan.org",
+    icons: [
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-html5",
+      "fa-brands fa-bootstrap",
+      "fa-brands fa-wordpress-simple"
+    ]
   },
   {
     name: "ESP Projects",
     description: `My role: what i worked on and how it helped the company`,
     image: projectHeaderImg4,
+    icons: [
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-html5",
+      "fa-brands fa-laravel",
+      "fa-brands fa-vuejs",
+      "fa-brands fa-docker",
+      "fa-brands fa-github",
+      "fa-brands fa-gitlab",
+      "fa-brands fa-linux",
+      "fa-brands fa-cloudflare",
+    ]
   },
 
 ];
@@ -111,8 +144,9 @@ const EcsAdditonalImages = [
     ECSImg1_3,
     ECSImg1_4,
     ECSImg1_5,
-    ECSImg1_6
+    ECSImg1_6,
 ];
+
 
 const DivaAdditonalImages = [
   projectHeaderImg2,
@@ -131,10 +165,12 @@ const ESPAdditonalImages = [
   ESPImg4_2,
   ESPImg4_3,
   ESPImg4_4,
-
+  ESPImg4_5,
+  ESPImg4_6,
+  ESPImg4_7,
+  ESPImg4_8,
 ];
 
-console.log(EcsAdditonalImages)
 
 var cardID = null;
 function openCloseCarousel(e) {
@@ -160,6 +196,7 @@ class CloseButton extends Component {
     return <div className="carouselCloseButton" onClick={openCloseCarousel}><CloseIcon/> </div>;
   }
 }
+
 // For each carousel / For each slide
 class ECSCarousel extends Component {
   render() {
@@ -169,7 +206,7 @@ class ECSCarousel extends Component {
           <Carousel>
             {EcsAdditonalImages.map((img, i) => (
               <div key={i} id="carousel_0">
-                  <img  key={img} src={img} />
+                  <img  key={img} src={img}  alt="Project 1"/>
                   <p className="legend">Legend 1</p>
               </div>
             ))}
@@ -185,7 +222,7 @@ class DIVACarousel extends Component {
           <Carousel>
             {DivaAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_1">
-                  <img  key={img} src={img} />
+                  <img  key={img} src={img}  alt="Project 2"/>
                   <p className="legend">Legend 1</p>
               </div>
             ))}
@@ -200,7 +237,7 @@ class GOLCarousel extends Component {
           <Carousel>
             {GOLAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_2">
-                  <img  key={img} src={img} />
+                  <img  key={img} src={img}  alt="Project 3"/>
                   <p className="legend">Legend 1</p>
               </div>
             ))}
@@ -215,7 +252,7 @@ class ESPCarousel extends Component {
           <Carousel>
             {ESPAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_3">
-                  <img  key={img} src={img} />
+                  <img  key={img} src={img}  alt="Project 4"/>
                   <p className="legend">1</p>
               </div>
             ))}
@@ -223,6 +260,55 @@ class ESPCarousel extends Component {
       );
   }
 };
+
+/* ICONS */
+class ECSIcons extends Component {
+  render() {
+      return (
+        <div className='containerflex'>
+          {projects[0].icons.map((ecsicons, i) => (
+            <i key={i} className={`material-icons MuiIcon-root ${ecsicons} flex-item`}></i>
+          ))}
+        </div>
+      );
+  }
+};
+class DIVAIcons extends Component {
+  render() {
+      return (
+        <div className='containerflex'>
+          {projects[1].icons.map((divaicons, i) => (
+            <i key={i} className={`material-icons MuiIcon-root ${divaicons} flex-item`}></i>
+          ))}
+        </div>
+      );
+  }
+};
+class GOLIcons extends Component {
+  render() {
+      return (
+        <div className='containerflex'>
+          {projects[2].icons.map((golicons, i) => (
+            <i key={i} className={`material-icons MuiIcon-root ${golicons} flex-item`}></i>
+          ))}
+        </div>
+      );
+  }
+};
+console.log(projects);
+class ESPIcons extends Component {
+  render() {
+      return (
+        <div className='containerflex'>
+          {projects[3].icons.map((espicons, i) => (
+            <i key={i} className={`material-icons MuiIcon-root ${espicons} flex-item`}></i>
+          ))}
+        </div>
+      );
+  }
+};
+
+
 
 // TODO make 4x DemoCaraousel class or a for loop like below
 // in each have photo of websites
@@ -233,7 +319,7 @@ const Portfolio = () => {
   const classes = useStyles();
   
   return (
-    
+
     <Box component="div" className={classes.mainContainer}>
       <Particles />
       <ECSCarousel />
@@ -244,6 +330,7 @@ const Portfolio = () => {
       <Grid container justify="center">
         {/* Projects */}
         {projects.map((project, i) => (
+
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
@@ -284,11 +371,26 @@ const Portfolio = () => {
                     ''
                 )}
               </CardActions>
+
+              {(project.name == 'Effective Consumable Solutions') ? (
+                <ECSIcons />
+              ):''}
+              {(project.name == 'DIVA Telecom') ? (
+                <DIVAIcons />
+              ):''}
+              {(project.name == 'Gaming Forum') ? (
+                <GOLIcons />
+              ):''}
+              {(project.name == 'ESP Projects') ? (
+                <ESPIcons />
+              ):''}
+              <div class="MuiCardActions-root MuiCardActions-spacing"></div>
             </Card>
           </Grid>
         ))}
       </Grid>
     </Box>
+    
   );
 };
 

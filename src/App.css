@@ -54,13 +54,69 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
-
 /* Nav Bar Center items */
 .MuiListItem-gutters {
-  padding-left: 48% !important; 
-  padding-right: 48% !important;
+  padding-left: 50% !important; 
+  padding-right: 50% !important;
 }
+/* css for resumepage */
+.MuiBox-root {
+  margin: 0px !important;
+}
+.MuiCardActions-root {
+  padding: 5px !important;
+}
+
+.MuiIcon-root {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.fa-css3-alt {
+  color: blueviolet;
+}
+.fa-html5 {
+  color: #cd8604;
+}
+.fa-magento {
+  color: #cd8604;
+}
+.fa-laravel {
+  color: red;
+}
+.fa-bootstrap {
+  color: blue;
+}
+.fa-vuejs { 
+ color: #1abc9c;
+}
+.fa-docker { 
+  color: lightskyblue;
+}
+.fa-github { 
+  color: black;
+}
+.fa-gitlab {
+  color: #cd8604;
+ }
+.fa-linux {
+  color: black;
+ }
+.fa-cloudflare { 
+  color: #cd8604;
+}
+.fa-wordpress-simple {
+  color: rgb(14, 14, 14);
+}
+.flex-item {
+  justify-content: center;
+}
+.containerflex {
+  display: flex;
+  justify-content: space-evenly;
+}
+

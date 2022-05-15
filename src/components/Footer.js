@@ -20,12 +20,14 @@ const useStyles = makeStyles({
     },
   },
 });
-
+// Make menu icons as the links to each page below
 const Footer = () => {
   const classes = useStyles();
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
+      <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
+
       <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
     </BottomNavigation>
   );
