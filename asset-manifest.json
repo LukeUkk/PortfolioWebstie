@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.0e5ca7ca.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.cfd181c0.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.cfd181c0.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.e9f768bf.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.e9f768bf.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.e0f7bcab.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.e0f7bcab.js.map",
     "static/css/2.1ba447cc.chunk.css": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css",
-    "static/js/2.d023aa89.chunk.js": "/PortfolioWebsite/static/js/2.d023aa89.chunk.js",
-    "static/js/2.d023aa89.chunk.js.map": "/PortfolioWebsite/static/js/2.d023aa89.chunk.js.map",
+    "static/js/2.219148ee.chunk.js": "/PortfolioWebsite/static/js/2.219148ee.chunk.js",
+    "static/js/2.219148ee.chunk.js.map": "/PortfolioWebsite/static/js/2.219148ee.chunk.js.map",
     "index.html": "/PortfolioWebsite/index.html",
-    "precache-manifest.c96fae74824eacee784957a021036d16.js": "/PortfolioWebsite/precache-manifest.c96fae74824eacee784957a021036d16.js",
+    "precache-manifest.b3a91a089101286324a306298db92ec9.js": "/PortfolioWebsite/precache-manifest.b3a91a089101286324a306298db92ec9.js",
     "service-worker.js": "/PortfolioWebsite/service-worker.js",
     "static/css/2.1ba447cc.chunk.css.map": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css.map",
     "static/css/main.0e5ca7ca.chunk.css.map": "/PortfolioWebsite/static/css/main.0e5ca7ca.chunk.css.map",
-    "static/js/2.d023aa89.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.d023aa89.chunk.js.LICENSE.txt",
+    "static/js/2.219148ee.chunk.js.LICENSE.txt": "/PortfolioWebsite/static/js/2.219148ee.chunk.js.LICENSE.txt",
     "static/media/404-1.png": "/PortfolioWebsite/static/media/404-1.5e41ddd8.png",
     "static/media/Action4Care_dash.png": "/PortfolioWebsite/static/media/Action4Care_dash.61c37ebe.png",
     "static/media/App.css": "/PortfolioWebsite/static/media/Background.7041cfab.jpg",
@@ -21,7 +21,10 @@
     "static/media/DivaTelecomHuddersfield.pdf": "/PortfolioWebsite/static/media/DivaTelecomHuddersfield.3ca5f547.pdf",
     "static/media/ECS_index.png": "/PortfolioWebsite/static/media/ECS_index.32d3898e.png",
     "static/media/ESP_Dash.PNG": "/PortfolioWebsite/static/media/ESP_Dash.397be4c6.PNG",
-    "static/media/GOLHome.JPG": "/PortfolioWebsite/static/media/GOLHome.dfe47ae7.JPG",
+    "static/media/GOL1.png": "/PortfolioWebsite/static/media/GOL1.f8644d37.png",
+    "static/media/GOL2.png": "/PortfolioWebsite/static/media/GOL2.0e24a6e9.png",
+    "static/media/GOL3.png": "/PortfolioWebsite/static/media/GOL3.d00f5705.png",
+    "static/media/GOLHeader.JPG": "/PortfolioWebsite/static/media/GOLHeader.dfe47ae7.JPG",
     "static/media/PermBuilder.PNG": "/PortfolioWebsite/static/media/PermBuilder.97ea62a5.PNG",
     "static/media/ProdReturns.PNG": "/PortfolioWebsite/static/media/ProdReturns.2405d1bb.PNG",
     "static/media/Returns.PNG": "/PortfolioWebsite/static/media/Returns.32449bd2.PNG",
@@ -42,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.e0f7bcab.js",
     "static/css/2.1ba447cc.chunk.css",
-    "static/js/2.d023aa89.chunk.js",
+    "static/js/2.219148ee.chunk.js",
     "static/css/main.0e5ca7ca.chunk.css",
-    "static/js/main.cfd181c0.chunk.js"
+    "static/js/main.e9f768bf.chunk.js"
   ]
 }
