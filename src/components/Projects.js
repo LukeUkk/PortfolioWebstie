@@ -34,7 +34,13 @@ import DIVAImg2_1 from "../images/portfolio/DIVA/divaReport.jpg";
 import DIVAImg2_2 from "../images/portfolio/DIVA/diva-telecom-international.jpg";
 
 
-import projectHeaderImg3 from "../images/portfolio/GOL/GOLHome.JPG";
+import projectHeaderImg3 from "../images/portfolio/GOL/GOLHeader.JPG";
+import GOLImg3_1 from "../images/portfolio/GOL/GOL1.png";
+import GOLImg3_2 from "../images/portfolio/GOL/GOL2.png";
+import GOLImg3_3 from "../images/portfolio/GOL/GOL3.png";
+
+
+
 
 
 
@@ -51,13 +57,14 @@ import ESPImg4_8 from "../images/portfolio/ESP/ProdReturns.PNG";
 
 import projectHeaderImg6 from "../images/react.png";
 import Particles from "./Particles";
-import { green, red } from '@material-ui/core/colors';
-import { Icon } from '@material-ui/core';
+// import { green, red } from '@material-ui/core/colors';
+// import { Icon } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import Fade from '@material-ui/core/Fade';
 
 
 /* This code could be alot better but yeah react....*/ 
-
-
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -86,7 +93,12 @@ const projects = [
       "fa-brands fa-css3-alt",
       "fa-brands fa-html5",
       "fa-brands fa-magento"
-    ]
+    ],
+    iconNames: [
+      "CSS3",
+      "HTML5",
+      "Magento",
+    ],
   },
   {
     name: "DIVA Telecom",
@@ -100,15 +112,19 @@ const projects = [
       "fa-brands fa-laravel",
       "fa-brands fa-bootstrap",
       "fa-brands fa-github",
-    ]
+    ],
+    iconNames: [
+      "CSS3",
+      "HTML5",
+      "Laravel",
+      "Bootstrap",
+      "Github",
+    ],
     // ideal way is to have additonalImages in here ******
   },
   {
     name: "Gaming Forum",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `My main role here was to manage the innerworkings of the website but also I took the initiative to redo the landing page among other things, this was made to entice new players with with a modern look and feel to the website`,
     image: projectHeaderImg3,
     live_demo_link: "https://gol-clan.org",
     icons: [
@@ -116,7 +132,13 @@ const projects = [
       "fa-brands fa-html5",
       "fa-brands fa-bootstrap",
       "fa-brands fa-wordpress-simple"
-    ]
+    ],
+    iconNames: [
+      "CSS3",
+      "HTML5",
+      "Bootstrap",
+      "Wordpress",
+    ],
   },
   {
     name: "ESP Projects",
@@ -132,7 +154,18 @@ const projects = [
       "fa-brands fa-gitlab",
       "fa-brands fa-linux",
       "fa-brands fa-cloudflare",
-    ]
+    ],
+    iconNames: [
+      "CSS3",
+      "HTML5",
+      "Laravel",
+      "Vuejs",
+      "Docker",
+      "Github",
+      "Gitlab",
+      "Linux",
+      "Cloudflare",
+    ],
   },
 
 ];
@@ -157,6 +190,9 @@ const DivaAdditonalImages = [
 
 const GOLAdditonalImages = [
   projectHeaderImg3,
+  GOLImg3_1,
+  GOLImg3_2,
+  GOLImg3_3,
 ];
 
 const ESPAdditonalImages = [
@@ -207,7 +243,7 @@ class ECSCarousel extends Component {
             {EcsAdditonalImages.map((img, i) => (
               <div key={i} id="carousel_0">
                   <img  key={img} src={img}  alt="Project 1"/>
-                  <p className="legend">Legend 1</p>
+                  <p className="legend">{i}</p>
               </div>
             ))}
           </Carousel>
@@ -223,7 +259,7 @@ class DIVACarousel extends Component {
             {DivaAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_1">
                   <img  key={img} src={img}  alt="Project 2"/>
-                  <p className="legend">Legend 1</p>
+                  <p className="legend">{i}</p>
               </div>
             ))}
           </Carousel>
@@ -238,7 +274,7 @@ class GOLCarousel extends Component {
             {GOLAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_2">
                   <img  key={img} src={img}  alt="Project 3"/>
-                  <p className="legend">Legend 1</p>
+                  <p className="legend">{i}</p>
               </div>
             ))}
           </Carousel>
@@ -253,7 +289,7 @@ class ESPCarousel extends Component {
             {ESPAdditonalImages.map((img, i) => (
               <div key={i}  id="carousel_3">
                   <img  key={img} src={img}  alt="Project 4"/>
-                  <p className="legend">1</p>
+                  <p className="legend">{i}</p>
               </div>
             ))}
           </Carousel>
@@ -265,11 +301,17 @@ class ESPCarousel extends Component {
 class ECSIcons extends Component {
   render() {
       return (
+
         <div className='containerflex'>
           {projects[0].icons.map((ecsicons, i) => (
-            <i key={i} className={`material-icons MuiIcon-root ${ecsicons} flex-item`}></i>
+            <Tooltip title={`${projects[0].iconNames[i]}`} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>
+              <IconButton aria-label={`${ecsicons}`}>
+                <i key={i} className={`material-icons MuiIcon-root ${ecsicons} flex-item`}></i>
+              </IconButton>
+            </Tooltip>       
           ))}
         </div>
+
       );
   }
 };
@@ -278,7 +320,11 @@ class DIVAIcons extends Component {
       return (
         <div className='containerflex'>
           {projects[1].icons.map((divaicons, i) => (
-            <i key={i} className={`material-icons MuiIcon-root ${divaicons} flex-item`}></i>
+            <Tooltip title={`${projects[1].iconNames[i]}`} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>
+              <IconButton>
+                <i key={i} className={`material-icons MuiIcon-root ${divaicons} flex-item`}></i>
+              </IconButton>
+            </Tooltip> 
           ))}
         </div>
       );
@@ -289,7 +335,11 @@ class GOLIcons extends Component {
       return (
         <div className='containerflex'>
           {projects[2].icons.map((golicons, i) => (
-            <i key={i} className={`material-icons MuiIcon-root ${golicons} flex-item`}></i>
+            <Tooltip title={`${projects[2].iconNames[i]}`} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>
+              <IconButton>
+                <i key={i} className={`material-icons MuiIcon-root ${golicons} flex-item`}></i>
+              </IconButton>
+            </Tooltip> 
           ))}
         </div>
       );
@@ -301,13 +351,16 @@ class ESPIcons extends Component {
       return (
         <div className='containerflex'>
           {projects[3].icons.map((espicons, i) => (
-            <i key={i} className={`material-icons MuiIcon-root ${espicons} flex-item`}></i>
+            <Tooltip title={`${projects[3].iconNames[i]}`} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>
+              <IconButton size="small">
+                <i key={i} className={`material-icons MuiIcon-root ${espicons} flex-item`}></i>
+              </IconButton>
+            </Tooltip> 
           ))}
         </div>
       );
   }
 };
-
 
 
 // TODO make 4x DemoCaraousel class or a for loop like below
@@ -351,6 +404,7 @@ const Portfolio = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+
               <CardActions>
                 {(
                     (project.live_demo_link && project.live_demo_link != 'diva') 
@@ -373,7 +427,9 @@ const Portfolio = () => {
               </CardActions>
 
               {(project.name == 'Effective Consumable Solutions') ? (
+
                 <ECSIcons />
+         
               ):''}
               {(project.name == 'DIVA Telecom') ? (
                 <DIVAIcons />
@@ -384,7 +440,7 @@ const Portfolio = () => {
               {(project.name == 'ESP Projects') ? (
                 <ESPIcons />
               ):''}
-              <div class="MuiCardActions-root MuiCardActions-spacing"></div>
+              <div className="MuiCardActions-root MuiCardActions-spacing"></div>
             </Card>
           </Grid>
         ))}

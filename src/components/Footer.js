@@ -2,32 +2,34 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Facebook from "@material-ui/icons/LinkedIn";
 import Twitter from "@material-ui/icons/Twitter";
-import { Link } from 'react-router-dom';
-
+import AssignmentInd from "@material-ui/icons/AssignmentInd";
+import Home from "@material-ui/icons/Home";
+import Apps from "@material-ui/icons/Apps";
+import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   bottomNavContainer: {
-    background: "#1c1919",
+    background: "#100d18",
   },
   root: {
     "& .MuiSvgIcon-root": {
-      fill: "tan",
+      fill: "#e5e7e4eb",
       "&:hover": {
-        fill: "tomato",
+        fill: "rgb(209 201 130)",
         fontSize: "1.8rem",
       },
     },
   },
 });
-// Make menu icons as the links to each page below
+
 const Footer = () => {
   const classes = useStyles();
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
-
+      <BottomNavigationAction icon={<Home />} className={classes.root} component={Link} to="/PortfolioWebsite"/>
+      <BottomNavigationAction icon={<AssignmentInd />} className={classes.root} component={Link} to="/Resume"/>
+      <BottomNavigationAction icon={<Apps />} className={classes.root} component={Link} to="/Projects"/>
       <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
     </BottomNavigation>
   );
