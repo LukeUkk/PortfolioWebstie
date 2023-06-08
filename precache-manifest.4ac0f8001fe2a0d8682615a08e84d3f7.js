@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7827538f1655bab34469c41e68f6403",
+    "revision": "57d001c295d312464c73a1e9f3a63731",
     "url": "/PortfolioWebsite/index.html"
   },
   {
-    "revision": "59968f5104ae9441c518",
+    "revision": "f0eca1892f77a5f3d6ac",
     "url": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css"
   },
   {
-    "revision": "06e99e443acb70205cdd",
-    "url": "/PortfolioWebsite/static/css/main.0e5ca7ca.chunk.css"
+    "revision": "2a2743ad0a4ddef78a6d",
+    "url": "/PortfolioWebsite/static/css/main.a194d6ce.chunk.css"
   },
   {
-    "revision": "59968f5104ae9441c518",
-    "url": "/PortfolioWebsite/static/js/2.4297f801.chunk.js"
+    "revision": "f0eca1892f77a5f3d6ac",
+    "url": "/PortfolioWebsite/static/js/2.1013d065.chunk.js"
   },
   {
     "revision": "8e87bb4d13687cabb933a2ce1902d414",
-    "url": "/PortfolioWebsite/static/js/2.4297f801.chunk.js.LICENSE.txt"
+    "url": "/PortfolioWebsite/static/js/2.1013d065.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06e99e443acb70205cdd",
-    "url": "/PortfolioWebsite/static/js/main.812e4cf0.chunk.js"
+    "revision": "2a2743ad0a4ddef78a6d",
+    "url": "/PortfolioWebsite/static/js/main.c44614d5.chunk.js"
   },
   {
     "revision": "2d19fd59d7941ebbf6eb",
@@ -84,6 +84,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioWebsite/static/media/Returns.32449bd2.PNG"
   },
   {
+    "revision": "be46054c94154873c918a8b59a1393da",
+    "url": "/PortfolioWebsite/static/media/SiteDash.be46054c.PNG"
+  },
+  {
     "revision": "6d98d1031d33d6cd150432af0a6e81ea",
     "url": "/PortfolioWebsite/static/media/TeamPlan.6d98d103.PNG"
   },
@@ -108,8 +112,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PortfolioWebsite/static/media/dog.814c1959.gif"
   },
   {
-    "revision": "7c8e5f50725885d51b72b45164274e41",
-    "url": "/PortfolioWebsite/static/media/menew.7c8e5f50.png"
+    "revision": "9ce3bab37d27c1dfbb157be47f749f53",
+    "url": "/PortfolioWebsite/static/media/menew.9ce3bab3.png"
   },
   {
     "revision": "851092805fb8dad84aba77a556582fe0",
