@@ -12,7 +12,7 @@ body {
   scrollbar-shadow-color: #1abc9c;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-
+.makeStyles-timeLineItem-11 {position:relative;animation:animateleft 1.9s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .carousel-root {
   display: none;
   position: fixed !important; /* Stay in place */

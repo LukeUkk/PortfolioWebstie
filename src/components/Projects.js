@@ -53,6 +53,7 @@ import ESPImg4_5 from "../images/portfolio/ESP/PermBuilder.PNG";
 import ESPImg4_6 from "../images/portfolio/ESP/TeamPlanGantt.PNG";
 import ESPImg4_7 from "../images/portfolio/ESP/Returns.PNG";
 import ESPImg4_8 from "../images/portfolio/ESP/ProdReturns.PNG";
+import ESPImg4_9 from "../images/portfolio/ESP/SiteDash.PNG";
 
 
 import projectHeaderImg6 from "../images/react.png";
@@ -142,7 +143,7 @@ const projects = [
   },
   {
     name: "ESP Projects",
-    description: `My role: what i worked on and how it helped the company`,
+    description: `I was mainly tasked with working on their Laravel/Vue.js based intranet system, after developing the framework the full potential of the system was realised and moved towards being a SAAS product that could be resold but along side this project I worked on bespoke Laravel applications for clients using various API's.`,
     image: projectHeaderImg4,
     icons: [
       "fa-brands fa-css3-alt",
@@ -205,6 +206,7 @@ const ESPAdditonalImages = [
   ESPImg4_6,
   ESPImg4_7,
   ESPImg4_8,
+  ESPImg4_9,
 ];
 
 

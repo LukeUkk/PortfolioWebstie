@@ -30,7 +30,7 @@ const Footer = () => {
       <BottomNavigationAction icon={<Home />} className={classes.root} component={Link} to="/PortfolioWebsite"/>
       <BottomNavigationAction icon={<AssignmentInd />} className={classes.root} component={Link} to="/Resume"/>
       <BottomNavigationAction icon={<Apps />} className={classes.root} component={Link} to="/Projects"/>
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/>
+      {/* <BottomNavigationAction icon={<Twitter />} className={classes.root} onClick={event =>  window.location.href="https://twitter.com/Lukehardcastl3"}/> */}
     </BottomNavigation>
   );
 };

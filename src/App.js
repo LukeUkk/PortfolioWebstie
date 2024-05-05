@@ -37,7 +37,7 @@ function App() {
         <Route exact path="/PortfolioWebsite" component={Home} />
         <Route exact path="/Resume" component={Resume} />
         <Route exact path="/Projects" component={Projects} />
-        <Route exact path="/Contact" component={Contact} />
+        {/* <Route exact path="/Contact" component={Contact} /> */}
         </ThemeProvider>
       </Switch>
     </React.Fragment>

@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Particles from "./Particles";
 import Typed from "react-typed";
-
+import "../App.css";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
