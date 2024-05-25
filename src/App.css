@@ -12,46 +12,60 @@ body {
   scrollbar-shadow-color: #1abc9c;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-.makeStyles-timeLineItem-11 {position:relative;animation:animateleft 1.9s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.makeStyles-timeLineItem-11 {
+  position: relative;
+  animation: animateleft 1.9s;
+}
+@keyframes animateleft {
+  from { left: -300px; opacity: 0; }
+  to { left: 0; opacity: 1; }
+}
+
 .carousel-root {
-  display: none;
-  position: fixed !important; /* Stay in place */
-  z-index: 1 !important; /* Sit on top */
-  left: 0 !important;
-  top: 0 !important;
-  width: 100% !important; /* Full width */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
   height: 100%;
-  overflow: auto !important; /* Enable scroll if needed */
-  background-color: rgb(0,0,0) !important; /* Fallback color */
-  background-color: rgba(0,0,0,0.4) !important; /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.makeStyles-timeLineItem-19::before {
+  padding: 0% 0% 0% 0% !important;
+}
+
+.carousel-root.active {
+  display: flex !important; /* Display and center when active */
 }
 
 .carousel-slider {
-  background-color: #fefefe !important;
-  margin: 1% auto !important; /* 15% from the top and centered */
-  border: 1px solid #888 !important;
-  width: 80% !important; /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: auto; /* Center horizontally */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-height: 90%; /* Ensure it doesn't overflow vertically */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
 }
 
 .carouselCloseButton {
-  display: none;
-  color: #aaa;
-  float: right;
+  color: #fff;
   font-size: 28px;
   font-weight: bold;
-  position: fixed;
-  z-index: 1;
-  /* left: 10%;
-  top: 12px; */
-  left: 89%;
-  top: 8px;
+  position: absolute;
+  right: 34px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .carouselCloseButton:hover,
 .carouselCloseButton:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* Nav Bar Center items */
@@ -59,10 +73,12 @@ body {
   padding-left: 50% !important; 
   padding-right: 50% !important;
 }
-/* css for resumepage */
+
+/* CSS for resume page */
 .MuiBox-root {
   margin: 0px !important;
 }
+
 .MuiCardActions-root {
   padding: 5px !important;
 }
@@ -92,7 +108,7 @@ body {
   color: blue;
 }
 .fa-vuejs { 
- color: #1abc9c;
+  color: #1abc9c;
 }
 .fa-docker { 
   color: lightskyblue;
@@ -102,10 +118,10 @@ body {
 }
 .fa-gitlab {
   color: #cd8604;
- }
+}
 .fa-linux {
   color: black;
- }
+}
 .fa-cloudflare { 
   color: #cd8604;
 }
@@ -118,5 +134,6 @@ body {
 .containerflex {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-

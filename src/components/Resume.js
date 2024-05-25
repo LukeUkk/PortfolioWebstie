@@ -195,12 +195,14 @@ const Resume = () => {
              Also while at the company I was tasked with planing and making a promotional landing page, converting the design teams mockups into a usable web application, this ended up generating sales.
           </Typography>
         </Box>
+
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
           2019
         </Typography>
+
         <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
@@ -209,9 +211,11 @@ const Resume = () => {
           >
             <Typed strings={["Software Developer"]} typeSpeed={50} />
           </Typography>
+
           <Typography variant="body1" align="center" className={classes.body1}>
             ESP Projects
           </Typography>
+
           <Typography
             variant="subtitle1"
             align="center"
@@ -222,33 +226,70 @@ const Resume = () => {
         </Box>
         
         
-         <Typography
+        <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         > 
           2023
         </Typography>
 
-        
-        {/*<Box component="div" className={classes.timeLineItem}>
+        <Box component="div" className={classes.timeLineItem}>
           <Typography
             variant="h5"
             align="center"
             className={classes.subHeading}
           >
-            Company Role
+            <Typed strings={["Software Developer"]} typeSpeed={50} />
           </Typography>
+
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            One Call
           </Typography>
+
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            ...
           </Typography>
-        </Box>*/}
+        </Box>
+
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        > 
+          2023
+        </Typography>
+
+        <Box component="div" className={classes.timeLineItem}>
+          <Typography
+            variant="h5"
+            align="center"
+            className={classes.subHeading}
+          >
+            <Typed strings={["FULLSTACK WEB DEVELOPER|"]} typeSpeed={50} />
+          </Typography>
+
+          <Typography variant="body1" align="center" className={classes.body1}>
+            Rejuvenate Digital
+          </Typography>
+
+          <Typography
+            variant="subtitle1"
+            align="center"
+            className={classes.subtitle1}
+          >
+            Test
+          </Typography>
+        </Box>
+        
+        <Typography
+          variant="h2"
+          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+        > 
+          2024
+        </Typography>
+
       </Box>
     </Box>
   );
