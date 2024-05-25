@@ -196,12 +196,7 @@ const Resume = () => {
           </Typography>
         </Box>
 
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2019
-        </Typography>
+
 
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -221,7 +216,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            I was mainly tasked with working on their Laravel/Vue.js based intranet system, after developing the framework the full potential of the system was realised and moved towards being a SAAS product that could be resold but along side this project I worked on bespoke Laravel applications for clients using various API's.
+            Co-Led the development efforts for the Laravel/Vue.js-based intranet system, unlocking its full potential and transitioning it into a scalable SaaS product primed for resale. Simultaneously, collaborated on crafting tailored Laravel applications for clients, integrating diverse APIs to meet unique business needs. Instrumental in expanding the company's software offerings and delivering tailored solutions to clients.
           </Typography>
         </Box>
         
@@ -251,15 +246,10 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
+            Thrived as a member of a global team at OneCall Insurance, contributing as a full-stack developer. Led autonomous projects from inception to deployment, navigating complex requirements and collaborating seamlessly across borders. Facilitated productive meetings to align project goals and drive innovation, ensuring timely delivery of robust solutions that enhanced the company's digital infrastructure.
           </Typography>
         </Box>
 
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        > 
-          2023
-        </Typography>
 
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -267,7 +257,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["FULLSTACK WEB DEVELOPER|"]} typeSpeed={50} />
+            <Typed strings={["BACKEND DEVELOPER|"]} typeSpeed={50} />
           </Typography>
 
           <Typography variant="body1" align="center" className={classes.body1}>
@@ -279,7 +269,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Test
+            Contributed as a full-stack developer at a leading digital agency specializing in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drive client success.
           </Typography>
         </Box>
         

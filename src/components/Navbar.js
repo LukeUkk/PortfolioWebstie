@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Drawer from "@material-ui/core/Drawer";
 import Box from "@material-ui/core/Box";
@@ -8,7 +8,6 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
@@ -25,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row-reverse",
   },
   menuIcon: {
-    color: "#e5e7e4eb",
+    //color: "#e5e7e4eb",
+    color: "white",
     fontSize: "xx-large",
   },
   title: {
@@ -34,16 +34,20 @@ const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     background: "#100d18",
     height: "100%",
+    display: "flex",
+    justifyContent: "center", // Center horizontally
+    alignItems: "center", // Center vertically
   },
-  avatar: {
-    display: "block",
-    margin: "0.5rem auto",
-    width: theme.spacing(13),
-    height: theme.spacing(13),
+  list: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
   },
   listItem: {
-    color: "tan",
-    textAlign: "center"
+    color: "white",
+    textAlign: "center",
+    justifyContent: "center",
+    padding: theme.spacing(2),
   },
   marginAuto: {
     margin: "auto",
@@ -59,14 +63,32 @@ const menuItems = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const drawerRef = useRef(null);
 
   const classes = useStyles();
 
-  const sideList = () => (
-    <Box className={classes.menuSliderContainer} component="div">
+  const handleOutsideClick = (event) => {
+    if (drawerRef.current && !drawerRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
 
+  useEffect(() => {
+    if (open) {
+      document.addEventListener('mousedown', handleOutsideClick);
+    } else {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [open]);
+
+  const sideList = () => (
+    <Box className={classes.menuSliderContainer} component="div" ref={drawerRef}>
       <Divider />
-      <List>
+      <List className={classes.list}>
         {menuItems.map((item, i) => (
           <ListItem
             button
@@ -79,7 +101,6 @@ const Navbar = () => {
             <ListItemIcon className={classes.listItem}>
               {item.listIcon}
             </ListItemIcon>
-            <ListItemText primary={item.listText} />
           </ListItem>
         ))}
       </List>
@@ -90,7 +111,7 @@ const Navbar = () => {
     <React.Fragment>
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
-          <Toolbar variant="dense" className={classes.marginAuto} >
+          <Toolbar variant="dense" className={classes.marginAuto}>
             <IconButton onClick={() => setOpen(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
               <MenuRoundedIcon className={classes.menuIcon} />
             </IconButton>
@@ -98,8 +119,7 @@ const Navbar = () => {
         </AppBar>
       </Box>
       <Drawer open={open} anchor="top" onClose={() => setOpen(false)}>
-        {/* {sideList()} */}
-        <Footer />
+        {sideList()}
       </Drawer>
     </React.Fragment>
   );

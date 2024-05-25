@@ -51,6 +51,8 @@ import projectHeaderImg5 from "../images/portfolio/OneCall/onecallHome.png";
 import projectHeaderImg6 from "../images/portfolio/RejDigital/vcc_home.png";
 import RejDigitalImg5_1 from "../images/portfolio/RejDigital/surridge.png";
 import RejDigitalImg5_2 from "../images/portfolio/RejDigital/PetVet.png";
+import RejDigitalImg5_3 from "../images/portfolio/RejDigital/sanc.png";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -97,7 +99,7 @@ const projects = [
   {
     name: "DIVA Telecom",
     description: `Empowered DIVA's workforce with a robust backend CMS, pivotal to daily operations in the telecommunications sector. Seamlessly bridged front and back-end functionalities as a full-stack developer. Leveraged Laravel to craft an intuitive interface, facilitating efficient task management and enhancing employee productivity.`,
-    image: projectHeaderImg2,
+    image: DIVAImg2_1,
     additonalImages: [
       projectHeaderImg2,
       DIVAImg2_1,
@@ -172,6 +174,7 @@ const projects = [
       "fa-brands fa-gitlab",
       "fa-brands fa-linux",
       "fa-brands fa-cloudflare",
+      "fa-brands fa-microsoft"
     ],
     iconNames: [
       "HTML5",
@@ -184,11 +187,12 @@ const projects = [
       "Gitlab",
       "Linux",
       "Cloudflare",
+      "Microsoft"
     ],
   },
   {
     name: "One Call Insurance",
-    description: `Thrived as a key member of a global team at an insurance company, contributing as a full-stack developer. Led autonomous projects from inception to deployment, navigating complex requirements and collaborating seamlessly across borders. Facilitated productive meetings to align project goals and drive innovation, ensuring timely delivery of robust solutions that enhanced the company's digital infrastructure.`,
+    description: `Thrived as a member of a global team at OneCall, contributing as a full-stack developer. Led autonomous projects from inception to deployment, navigating complex requirements and collaborating seamlessly across borders. Facilitated productive meetings to align project goals and drive innovation, ensuring timely delivery of robust solutions that enhanced the company's digital infrastructure.`,
     image: projectHeaderImg5,
     additonalImages: [
       projectHeaderImg5,
@@ -200,7 +204,7 @@ const projects = [
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
       "fa-brands fa-github",
-      "fa-brands fa-gitlab",
+      "fa-brands fa-bitbucket",
       "fa-brands fa-linux",
     ],
     iconNames: [
@@ -210,19 +214,20 @@ const projects = [
       "Vuejs",
       "Docker",
       "Github",
-      "Gitlab",
+      "BitBucket",
       "Linux",
       "Cloudflare",
     ],
   },
   {
     name: "Rejuvenate Digital",
-    description: ``,
+    description: `Contributed as a full-stack developer at a leading digital agency specializing in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database data retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drove client success.`,
     image: projectHeaderImg6,
     additonalImages: [
       projectHeaderImg6,
       RejDigitalImg5_1,
-      RejDigitalImg5_2
+      RejDigitalImg5_2,
+      RejDigitalImg5_3
     ],
     icons: [
       "fa-brands fa-css3-alt",
@@ -230,8 +235,7 @@ const projects = [
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
       "fa-brands fa-docker",
-      "fa-brands fa-github",
-      "fa-brands fa-gitlab",
+      "fa-brands fa-bitbucket",
       "fa-brands fa-linux",
       "fa-brands fa-wordpress"
     ],
@@ -241,7 +245,7 @@ const projects = [
       "Laravel",
       "Vuejs",
       "Docker",
-      "Github",
+      "BitBucket",
       "Linux",
       "Wordpress"
     ],
@@ -285,6 +289,9 @@ const Portfolio = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer} onClick={() => openCloseCarousel(i)}>
               <CardActionArea>
+              <Typography variant="h5" gutterBottom align="center" >
+                    {project.name}
+                </Typography>
                 <CardMedia
                   component="img"
                   alt={`Project ${i + 1}`}
@@ -292,9 +299,6 @@ const Portfolio = () => {
                   image={project.image}
                 />
                 <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {project.name}
-                  </Typography>
                   <Typography variant="body2" color="textSecondary">
                     {project.description}
                   </Typography>
@@ -312,6 +316,9 @@ const Portfolio = () => {
                   </Button>
                 )}
               </CardActions>
+              <Typography variant="h6" align="center" >
+                    Tools Used
+                </Typography>
               <div className='containerflex'>
                 {project.icons.map((icon, index) => (
                   <Tooltip key={index} title={project.iconNames[index]} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>

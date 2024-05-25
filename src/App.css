@@ -12,7 +12,9 @@ body {
   scrollbar-shadow-color: #1abc9c;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-
+.MuiDrawer-paperAnchorTop {
+  left: -125%;
+}
 .makeStyles-timeLineItem-11 {
   position: relative;
   animation: animateleft 1.9s;
@@ -128,6 +130,15 @@ body {
 .fa-wordpress-simple {
   color: rgb(14, 14, 14);
 }
+.fa-js {
+  color: orange;
+}
+.fa-microsoft {
+  color: rgb(235, 143, 235);
+}
+.fa-bitbucket {
+  color: rgb(226, 66, 226);
+}
 .flex-item {
   justify-content: center;
 }
@@ -136,4 +147,13 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+h5 {
+  padding: 2%;
+}
+
+button:hover{
+  background-color: #e3e3e38a;
+  cursor: pointer;
 }
