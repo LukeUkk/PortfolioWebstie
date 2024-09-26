@@ -35,11 +35,18 @@ body {
   justify-content: center;
   position: absolute;
 }
-
-.makeStyles-timeLineItem-19::before {
+.makeStyles-timeLineItem-11:nth-of-type(4n):before {
   padding: 0% 0% 0% 0% !important;
 }
-
+.makeStyles-timeLineItem-16:before{
+  padding: 0% 0% 0% 0% !important;
+}
+.makeStyles-timeLineItem-19:before {
+  padding: 0% 0% 0% 0% !important;
+}
+.jss18:nth-of-type(4n):before{
+  padding: 0% 0% 0% 0% !important;
+}
 .carousel-root.active {
   display: flex !important; /* Display and center when active */
 }

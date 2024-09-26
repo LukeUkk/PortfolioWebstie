@@ -52,6 +52,8 @@ import projectHeaderImg6 from "../images/portfolio/RejDigital/vcc_home.png";
 import RejDigitalImg5_1 from "../images/portfolio/RejDigital/surridge.png";
 import RejDigitalImg5_2 from "../images/portfolio/RejDigital/PetVet.png";
 import RejDigitalImg5_3 from "../images/portfolio/RejDigital/sanc.png";
+import RejDigitalImg5_4 from "../images/portfolio/RejDigital/topspec.png";
+
 
 
 
@@ -203,6 +205,7 @@ const projects = [
       "fa-brands fa-html5",
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
+      "fa-brands fa-docker",
       "fa-brands fa-github",
       "fa-brands fa-bitbucket",
       "fa-brands fa-linux",
@@ -221,20 +224,20 @@ const projects = [
   },
   {
     name: "Rejuvenate Digital",
-    description: `Contributed as a full-stack developer at a leading digital agency specializing in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database data retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drove client success.`,
+    description: `Contributed as a full-stack developer at a digital agency specializing in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database data retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drove client success.`,
     image: projectHeaderImg6,
     additonalImages: [
       projectHeaderImg6,
       RejDigitalImg5_1,
       RejDigitalImg5_2,
-      RejDigitalImg5_3
+      RejDigitalImg5_3,
+      RejDigitalImg5_4
     ],
     icons: [
       "fa-brands fa-css3-alt",
       "fa-brands fa-html5",
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
-      "fa-brands fa-docker",
       "fa-brands fa-bitbucket",
       "fa-brands fa-linux",
       "fa-brands fa-wordpress"
@@ -244,7 +247,6 @@ const projects = [
       "HTML5",
       "Laravel",
       "Vuejs",
-      "Docker",
       "BitBucket",
       "Linux",
       "Wordpress"
@@ -298,11 +300,11 @@ const Portfolio = () => {
                   height="140"
                   image={project.image}
                 />
-                <CardContent>
+                {/*<CardContent>
                   <Typography variant="body2" color="textSecondary">
                     {project.description}
                   </Typography>
-                </CardContent>
+                </CardContent>*/}
               </CardActionArea>
               <CardActions>
                 {project.live_demo_link && project.live_demo_link !== 'diva' && (
@@ -316,9 +318,9 @@ const Portfolio = () => {
                   </Button>
                 )}
               </CardActions>
-              <Typography variant="h6" align="center" >
+              {/*<Typography variant="h6" align="center" >
                     Tools Used
-                </Typography>
+                </Typography>*/}
               <div className='containerflex'>
                 {project.icons.map((icon, index) => (
                   <Tooltip key={index} title={project.iconNames[index]} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>

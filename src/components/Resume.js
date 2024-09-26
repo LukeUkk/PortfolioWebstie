@@ -154,7 +154,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["FullStack Web Developer"]} typeSpeed={50} />
+            <Typed strings={["FullStack Developer"]} typeSpeed={50} />
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Effective Consumable Solutions
@@ -179,7 +179,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-             <Typed strings={["FullStack Web Developer"]} typeSpeed={50} />
+             <Typed strings={["FullStack Developer"]} typeSpeed={50} />
 
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
@@ -204,7 +204,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["Software Developer"]} typeSpeed={50} />
+            <Typed strings={["FullStack/Software Developer"]} typeSpeed={50} />
           </Typography>
 
           <Typography variant="body1" align="center" className={classes.body1}>
@@ -234,7 +234,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["Software Developer"]} typeSpeed={50} />
+            <Typed strings={["FullStack Developer"]} typeSpeed={50} />
           </Typography>
 
           <Typography variant="body1" align="center" className={classes.body1}>
@@ -257,7 +257,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["BACKEND DEVELOPER|"]} typeSpeed={50} />
+            <Typed strings={["BACKEND DEVELOPER"]} typeSpeed={50} />
           </Typography>
 
           <Typography variant="body1" align="center" className={classes.body1}>
