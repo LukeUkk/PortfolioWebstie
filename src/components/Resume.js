@@ -269,7 +269,7 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Contributed as a full-stack developer at a leading digital agency specializing in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drive client success.
+            Contributed as a full-stack developer at a leading digital agency specialising in e-commerce websites for mid to large companies, including renowned brands like Vintage Cash Cow. Focused primarily on backend development, handling APIs and database retrieval, while also engaging in frontend tasks. Played a pivotal role in delivering robust and scalable e-commerce solutions that drive client success.
           </Typography>
         </Box>
         
