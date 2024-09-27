@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/PortfolioWebsite/static/css/main.8c0fa011.chunk.css",
-    "main.js": "/PortfolioWebsite/static/js/main.0e479a96.chunk.js",
-    "main.js.map": "/PortfolioWebsite/static/js/main.0e479a96.chunk.js.map",
+    "main.js": "/PortfolioWebsite/static/js/main.c694dd49.chunk.js",
+    "main.js.map": "/PortfolioWebsite/static/js/main.c694dd49.chunk.js.map",
     "runtime-main.js": "/PortfolioWebsite/static/js/runtime-main.e0f7bcab.js",
     "runtime-main.js.map": "/PortfolioWebsite/static/js/runtime-main.e0f7bcab.js.map",
     "static/css/2.1ba447cc.chunk.css": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css",
     "static/js/2.f0b00717.chunk.js": "/PortfolioWebsite/static/js/2.f0b00717.chunk.js",
     "static/js/2.f0b00717.chunk.js.map": "/PortfolioWebsite/static/js/2.f0b00717.chunk.js.map",
     "index.html": "/PortfolioWebsite/index.html",
-    "precache-manifest.24c21b86af78f4cc11c80e499adb75c4.js": "/PortfolioWebsite/precache-manifest.24c21b86af78f4cc11c80e499adb75c4.js",
+    "precache-manifest.6b00bd1e7aca0999899ac9e2c4e2de31.js": "/PortfolioWebsite/precache-manifest.6b00bd1e7aca0999899ac9e2c4e2de31.js",
     "service-worker.js": "/PortfolioWebsite/service-worker.js",
     "static/css/2.1ba447cc.chunk.css.map": "/PortfolioWebsite/static/css/2.1ba447cc.chunk.css.map",
     "static/css/main.8c0fa011.chunk.css.map": "/PortfolioWebsite/static/css/main.8c0fa011.chunk.css.map",
@@ -36,10 +36,10 @@
     "static/media/diva-telecom-international.jpg": "/PortfolioWebsite/static/media/diva-telecom-international.9a42d0c6.jpg",
     "static/media/divaReport.jpg": "/PortfolioWebsite/static/media/divaReport.a312e53d.jpg",
     "static/media/dog.gif": "/PortfolioWebsite/static/media/dog.814c1959.gif",
-    "static/media/menew.png": "/PortfolioWebsite/static/media/menew.9ce3bab3.png",
     "static/media/mobilenav.png": "/PortfolioWebsite/static/media/mobilenav.85109280.png",
     "static/media/onecallHome.png": "/PortfolioWebsite/static/media/onecallHome.e6348940.png",
     "static/media/productrange.png": "/PortfolioWebsite/static/media/productrange.cc6d87f6.png",
+    "static/media/profile.png": "/PortfolioWebsite/static/media/profile.334c8368.png",
     "static/media/sanc.png": "/PortfolioWebsite/static/media/sanc.1bfa5ff5.png",
     "static/media/spific-product-range.png": "/PortfolioWebsite/static/media/spific-product-range.9a402144.png",
     "static/media/surridge.png": "/PortfolioWebsite/static/media/surridge.0b1df167.png",
@@ -53,6 +53,6 @@
     "static/css/2.1ba447cc.chunk.css",
     "static/js/2.f0b00717.chunk.js",
     "static/css/main.8c0fa011.chunk.css",
-    "static/js/main.0e479a96.chunk.js"
+    "static/js/main.c694dd49.chunk.js"
   ]
 }
