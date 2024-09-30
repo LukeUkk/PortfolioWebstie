@@ -204,7 +204,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            <Typed strings={["FullStack/Software Developer"]} typeSpeed={50} />
+            <Typed strings={["Software Developer"]} typeSpeed={50} />
           </Typography>
 
           <Typography variant="body1" align="center" className={classes.body1}>
