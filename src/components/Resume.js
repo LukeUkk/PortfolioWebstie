@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "#70ac60 #70ac60 transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -73,13 +73,13 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        borderColor: "transparent transparent #70ac60 #70ac60",
       },
       "&:nth-of-type(4n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
-        padding: "0% 10% 0% 10%",
+        borderColor: "transparent transparent #70ac60 #70ac60",
+        //padding: "0% 10% 0% 10%",
       },
     },
   },
@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
+    color: "#fff",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
@@ -118,10 +118,10 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
   },
   body1: {
-    color: "tomato",
+    color: "#14d2ed",
   },
   subtitle1: {
-    color: "tan",
+    color: "#e6d293",
   },
   paddingBottom: {
 

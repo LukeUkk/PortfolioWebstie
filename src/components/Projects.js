@@ -111,6 +111,7 @@ const projects = [
     icons: [
       "fa-brands fa-html5",
       "fa-brands fa-css3-alt",
+      "fa-brands fa-js",
       "fa-brands fa-laravel",
       "fa-brands fa-bootstrap",
       "fa-brands fa-github",
@@ -118,6 +119,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
+      "Java Script",
       "Laravel",
       "Bootstrap",
       "Github",
@@ -189,7 +191,7 @@ const projects = [
       "Gitlab",
       "Linux",
       "Cloudflare",
-      "Microsoft"
+      "Microsoft Azure"
     ],
   },
   {
@@ -201,8 +203,9 @@ const projects = [
 
     ],
     icons: [
-      "fa-brands fa-css3-alt",
       "fa-brands fa-html5",
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js",
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
       "fa-brands fa-docker",
@@ -211,8 +214,9 @@ const projects = [
       "fa-brands fa-linux",
     ],
     iconNames: [
-      "CSS3",
       "HTML5",
+      "CSS3",
+      "Java Script",
       "Laravel",
       "Vuejs",
       "Docker",
@@ -234,8 +238,9 @@ const projects = [
       RejDigitalImg5_4
     ],
     icons: [
-      "fa-brands fa-css3-alt",
       "fa-brands fa-html5",
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js",
       "fa-brands fa-laravel",
       "fa-brands fa-vuejs",
       "fa-brands fa-bitbucket",
@@ -243,8 +248,9 @@ const projects = [
       "fa-brands fa-wordpress"
     ],
     iconNames: [
-      "CSS3",
       "HTML5",
+      "CSS3",
+      "Java Script",
       "Laravel",
       "Vuejs",
       "BitBucket",
