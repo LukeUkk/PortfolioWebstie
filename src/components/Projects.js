@@ -94,7 +94,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Magento",
     ],
   },
@@ -119,7 +119,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Laravel",
       "Bootstrap",
       "Github",
@@ -146,7 +146,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Bootstrap",
       "Wordpress"
     ],
@@ -183,7 +183,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Laravel",
       "Vuejs",
       "Docker",
@@ -216,7 +216,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Laravel",
       "Vuejs",
       "Docker",
@@ -250,7 +250,7 @@ const projects = [
     iconNames: [
       "HTML5",
       "CSS3",
-      "Java Script",
+      "JavaScript",
       "Laravel",
       "Vuejs",
       "BitBucket",
