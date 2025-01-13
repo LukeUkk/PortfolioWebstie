@@ -17,6 +17,8 @@ import Fade from '@material-ui/core/Fade';
 import Pdf from '../images/portfolio/DIVA/DivaTelecomHuddersfield.pdf';
 import "../App.css";
 import Particles from "./Particles";
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import projectHeaderImg1 from "../images/portfolio/ECS/ECS_index.png";
 import ECSImg1_1 from "../images/portfolio/ECS/websitehomemenu.png";
@@ -54,8 +56,8 @@ import RejDigitalImg5_2 from "../images/portfolio/RejDigital/PetVet.png";
 import RejDigitalImg5_3 from "../images/portfolio/RejDigital/sanc.png";
 import RejDigitalImg5_4 from "../images/portfolio/RejDigital/topspec.png";
 
-
-
+import ThinkEmpHomeImg from "../images/portfolio/ThinkEmp/ThinkEmpHome.png";
+import GetQualifiedHomeImg from "../images/portfolio/ThinkEmp/GetQualifiedHome.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -258,6 +260,33 @@ const projects = [
       "Wordpress"
     ],
   },
+  {
+    name: "Think Employment",
+    description: ``,
+    image: ThinkEmpHomeImg,
+    additonalImages: [
+      ThinkEmpHomeImg,
+      GetQualifiedHomeImg,
+    ],
+    icons: [
+      "fa-brands fa-html5",
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js",
+      "fa-brands fa-laravel",
+      "fa-brands fa-bitbucket",
+      "fa-brands fa-linux",
+      "fa-brands fa-wordpress"
+    ],
+    iconNames: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Laravel",
+      "Wordpress",
+      "BitBucket",
+      "Linux",
+    ],
+  },
 ];
 
 const Portfolio = () => {
@@ -272,14 +301,22 @@ const Portfolio = () => {
     setSelectedCarousel(id, id);
   };
 
+  const [showWaveBar, setShowWaveBar] = useState(true);
+
+  const handleWaveBarClick = () => {
+    setShowWaveBar(false);
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  };
+
   return (
     <Box component="div" className={classes.mainContainer}>
+
       <Particles />
-      <div className={`carousel-root ${selectedCarousel !== null ? 'active' : ''}`} style={{ display: selectedCarousel !== null ? 'flex' : 'none' }}>>
+
+      <div className={`carousel-root ${selectedCarousel !== null ? 'active' : ''}`} style={{ display: selectedCarousel !== null ? 'flex' : 'none' }}>
         {selectedCarousel !== null && (
           <div>
             <Carousel>
-
               {projects[selectedCarousel].additonalImages.map((img, i) => (
                 <div key={i}>
                   <img src={img} alt={`Project ${selectedCarousel + 1} - Image ${i + 1}`} />
@@ -292,13 +329,14 @@ const Portfolio = () => {
           </div>
         )}
       </div>
+
       <Grid container justify="center">
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card className={classes.cardContainer} onClick={() => openCloseCarousel(i)}>
               <CardActionArea>
-              <Typography variant="h5" gutterBottom align="center" >
-                    {project.name}
+                <Typography variant="h5" gutterBottom align="center" >
+                  {project.name}
                 </Typography>
                 <CardMedia
                   component="img"
@@ -306,12 +344,8 @@ const Portfolio = () => {
                   height="140"
                   image={project.image}
                 />
-                {/*<CardContent>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>*/}
               </CardActionArea>
+
               <CardActions>
                 {project.live_demo_link && project.live_demo_link !== 'diva' && (
                   <Button size="small" color="primary" target="_blank" href={project.live_demo_link}>
@@ -324,9 +358,7 @@ const Portfolio = () => {
                   </Button>
                 )}
               </CardActions>
-              {/*<Typography variant="h6" align="center" >
-                    Tools Used
-                </Typography>*/}
+
               <div className='containerflex'>
                 {project.icons.map((icon, index) => (
                   <Tooltip key={index} title={project.iconNames[index]} arrow TransitionComponent={Fade} TransitionProps={{ timeout: 600 }}>
@@ -340,6 +372,26 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
+
+      {showWaveBar && (
+        <div className="wave-bar" onClick={handleWaveBarClick}>
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <ArrowDownwardIcon
+            className="arrow"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              bottom: '10px',
+              transform: 'translateX(-50%)',
+              zIndex: 10,
+              color: '#fff',
+              fontSize: '24px',
+              cursor: 'pointer',
+            }}
+          />
+        </div>
+      )}
     </Box>
   );
 };

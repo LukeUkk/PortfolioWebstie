@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row-reverse",
   },
   menuIcon: {
-    //color: "#e5e7e4eb",
     color: "white",
     fontSize: "xx-large",
   },
@@ -35,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
     background: "#100d18",
     height: "100%",
     display: "flex",
-    justifyContent: "center", // Center horizontally
-    alignItems: "center", // Center vertically
+    justifyContent: "center",
+    alignItems: "center",
   },
   list: {
     display: "flex",
@@ -48,9 +47,36 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     justifyContent: "center",
     padding: theme.spacing(2),
+    cursor: "pointer",
+    "&:hover": {
+      backgroundColor: "#fff",
+      color: "#100d18",
+      transition: "all 0.3s ease",
+    },
   },
   marginAuto: {
     margin: "auto",
+  },
+  desktopMenu: {
+    display: "flex",
+    justifyContent: "center",
+    '& a': {
+      textDecoration: "none",
+      color: "white",
+      padding: theme.spacing(1),
+      display: "flex",
+      alignItems: "center",
+      cursor: "pointer",
+      "&:hover": {
+        backgroundColor: "#d8f4f4",
+        color: "#100d18",
+        borderRadius: "4px",
+        transition: "all 0.3s ease",
+      },
+    },
+    '& svg': {
+      marginRight: theme.spacing(1),
+    },
   },
 }));
 
@@ -58,14 +84,25 @@ const menuItems = [
   { listIcon: <Home />, listText: "Home", listPath: "/PortfolioWebsite" },
   { listIcon: <AssignmentInd />, listText: "Resume", listPath: "/Resume" },
   { listIcon: <Apps />, listText: "Projects", listPath: "/Projects" },
-  // { listIcon: <ContactMail />, listText: "Contact", listPath: "/Contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const drawerRef = useRef(null);
 
   const classes = useStyles();
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleOutsideClick = (event) => {
     if (drawerRef.current && !drawerRef.current.contains(event.target)) {
@@ -112,15 +149,28 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar variant="dense" className={classes.marginAuto}>
-            <IconButton onClick={() => setOpen(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-              <MenuRoundedIcon className={classes.menuIcon} />
-            </IconButton>
+            {isMobile ? (
+              <IconButton onClick={() => setOpen(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+                <MenuRoundedIcon className={classes.menuIcon} />
+              </IconButton>
+            ) : (
+              <Box className={classes.desktopMenu}>
+                {menuItems.map((item, i) => (
+                  <Link key={i} to={item.listPath}>
+                    {item.listIcon}
+                    {item.listText}
+                  </Link>
+                ))}
+              </Box>
+            )}
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor="top" onClose={() => setOpen(false)}>
-        {sideList()}
-      </Drawer>
+      {isMobile && (
+        <Drawer open={open} anchor="top" onClose={() => setOpen(false)}>
+          {sideList()}
+        </Drawer>
+      )}
     </React.Fragment>
   );
 };
